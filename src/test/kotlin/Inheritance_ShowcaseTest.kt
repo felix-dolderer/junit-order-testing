@@ -1,8 +1,11 @@
-import org.junit.jupiter.api.*
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation
+import helper.BaseFailFastTest
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.BeforeAll
+import org.junit.jupiter.api.Order
+import org.junit.jupiter.api.Test
 
-@TestMethodOrder(OrderAnnotation::class)
-class ShowcaseTest {
+@Suppress("ClassName")
+class Inheritance_ShowcaseTest : BaseFailFastTest() {
     companion object {
         @BeforeAll
         @JvmStatic
@@ -15,7 +18,7 @@ class ShowcaseTest {
     @Order(1)
     fun testFirst() {
         println("First test executed")
-        Assertions.assertTrue(true)
+        Assertions.assertTrue(false)
     }
 
     @Test
