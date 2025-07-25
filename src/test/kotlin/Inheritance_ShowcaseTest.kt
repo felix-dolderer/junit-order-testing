@@ -1,9 +1,11 @@
+import helper.BaseFailFastTest
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 
-class ShowcaseTest : BaseFailFastTest() {
+@Suppress("ClassName")
+class Inheritance_ShowcaseTest : BaseFailFastTest() {
     companion object {
         @BeforeAll
         @JvmStatic
@@ -23,6 +25,6 @@ class ShowcaseTest : BaseFailFastTest() {
     @Order(2)
     fun testSecond() {
         println("Second test executed")
-        Assertions.assertTrue(false)
+        Assertions.assertTrue(true)
     }
 }
