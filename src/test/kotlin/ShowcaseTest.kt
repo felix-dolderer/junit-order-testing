@@ -19,13 +19,13 @@ class ShowcaseTest {
     @Order(1)
     fun testFirst() {
         println("First test executed")
-        Assertions.assertTrue(true)
+        Assertions.assertTrue(false)
     }
 
     @Test
     @Order(2)
     fun testSecond() {
         println("Second test executed")
-        Assertions.assertTrue(true)
+        Assertions.assertTrue(false)
     }
 }
