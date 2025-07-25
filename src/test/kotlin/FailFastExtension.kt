@@ -23,7 +23,6 @@ class FailFastExtension : ExecutionCondition, TestExecutionExceptionHandler {
         val testClass = context.testClass.orElse(null)
         if (testClass != null) {
             failedClasses.add(testClass)
-            println("Test ${context.displayName} failed - marking class ${testClass.simpleName} to skip remaining tests")
         }
         throw throwable
     }

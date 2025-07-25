@@ -1,13 +1,9 @@
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeAll
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.TestMethodOrder
-import org.junit.jupiter.api.extension.ExtendWith
 
-@TestMethodOrder(OrderAnnotation::class)
-@ExtendWith(FailFastExtension::class)
+@FailFastTest
 class ShowcaseTest {
     companion object {
         @BeforeAll
