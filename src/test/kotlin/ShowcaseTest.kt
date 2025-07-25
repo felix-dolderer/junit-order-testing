@@ -3,8 +3,7 @@ import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Order
 import org.junit.jupiter.api.Test
 
-@FailFastTest
-class ShowcaseTest {
+class ShowcaseTest : BaseFailFastTest() {
     companion object {
         @BeforeAll
         @JvmStatic
